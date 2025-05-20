@@ -12,7 +12,24 @@ html {
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
+/* Prevent horizontal overflow */
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
 
+/* Ensure all elements use border-box */
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* Responsive images and media */
+img, video, iframe {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 /* Sections
  * ========================================================================== */
 
